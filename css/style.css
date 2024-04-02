@@ -1,0 +1,315 @@
+body {
+    margin: 0;
+    font-family:  sans-serif;
+    color:#fefe;
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    background: #333;
+    transition: all 0.3s ease 0s;
+    
+    
+}
+
+button {
+    background-color:  transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+} 
+ul,
+ol, 
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 , h2 ,h3 ,h4 ,h5 ,h6 , p {
+   margin: 0;
+}
+
+.wrapper {
+   min-height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+._container {
+    max-width: 1150px;
+    padding: 50px 15px;
+    margin: 0 auto;
+    
+   
+    
+}
+
+main {
+    background-color: #333;
+}
+
+
+.background-video__container {
+   
+}
+
+.title {
+    font-size: 30px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.background-video {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.6);
+
+    
+}
+
+.background-video__body {
+
+}
+
+.background-video__text {
+    font-size: 20px;
+
+}
+.background-video__text  p:not(:last-child){
+  margin-bottom:  20px;
+
+}
+
+.background-video__bg {
+
+}
+
+.background-video__bg  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+   
+}
+.title {
+}
+
+
+
+
+
+
+.video {
+  position: relative;
+  aspect-ratio: 16/9;
+  display: flex;
+    justify-content: center;
+ 
+}
+
+/* @media (max-width: 479.98px) {
+    .video {
+        
+        padding-bottom: 70%;
+       
+      } 
+} */
+
+.video__item {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+
+  
+}
+
+.main-video .video__item  {
+    border-radius: 24px;
+}
+
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+}
+.item {
+
+
+}
+
+.item__video {
+    position: relative;
+    aspect-ratio: 16/9;
+ 
+}
+
+.item__video  video,
+.item__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+
+   
+}
+
+.item__video:not(:last-child) {
+    margin-bottom: 15px;
+    
+   
+}
+ 
+
+.item__text {
+
+}
+.youtube {
+    display: grid;
+   
+    
+
+}
+
+.youtube-video {
+ 
+   display: flex;
+   justify-content: center;
+   
+   
+   
+
+}
+
+.youtube-video__body {
+  flex: 0 1 800px;
+  position: relative;
+  aspect-ratio: 16/9;
+  
+}
+
+.youtube-video iframe{
+ 
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+
+@media (min-width: 767.98px) {
+    .youtube-video iframe {
+        border-radius: 24px;
+    }    
+}
+
+
+
+.videojs {
+   
+
+
+ 
+}
+
+.videojs .videojs-video {
+  display: flex;
+  justify-content: center;
+}
+
+.videojs .videojs__item {
+flex: 0 1 800px;
+max-width: 800px;
+aspect-ratio: 16/9;
+border-radius: 24px;
+overflow: hidden;
+  
+    
+
+}
+
+
+.videojs .vjs-big-play-button  {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width:  3em;
+   height: 3em;
+   border-radius: 50%;
+   line-height: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.vjs-controls-disabled .vjs-big-play-button, .vjs-error .vjs-big-play-button, .vjs-has-started .vjs-big-play-button, .vjs-using-native-controls .vjs-big-play-button {
+    display: none;
+}
+
+.vjs-paused   .vjs-big-play-button {
+    display: flex;
+}
+
+.vjs-big-play-button span {
+   height: 30px;
+}
+
+.videojs  .vjs-big-play-button .vjs-icon-placeholder::before  {
+     position: static;
+    
+}
+
+.vjs-text-track-display::before  {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 200%;
+   background-color: #000;
+   transition: opacity 0.3s ease 0s;
+   pointer-events: none;
+}
+
+.vjs-paused .vjs-text-track-display::before  {
+  opacity: 0.6;
+}
+
+.vjs-playing .vjs-text-track-display::before {
+    opacity: 0;
+}
+
+
+.videojs-video {
+}
+.video-js {
+}
+
+
+
+
